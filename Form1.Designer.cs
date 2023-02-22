@@ -249,7 +249,7 @@
             // 
             this.OperationsPanel.Controls.Add(this.TwoValuePanel);
             this.OperationsPanel.Controls.Add(this.OneValuePanel);
-            this.OperationsPanel.Location = new System.Drawing.Point(73, 82);
+            this.OperationsPanel.Location = new System.Drawing.Point(83, 82);
             this.OperationsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.OperationsPanel.Name = "OperationsPanel";
             this.OperationsPanel.Size = new System.Drawing.Size(227, 115);
@@ -293,7 +293,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 216);
+            this.ClientSize = new System.Drawing.Size(395, 216);
             this.Controls.Add(this.OperationsPanel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label3);
@@ -301,7 +301,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Supercomplex calculator (rem)";
             this.Load += new System.EventHandler(this.Form1_Load);
