@@ -65,6 +65,7 @@ namespace Supercomplex_Calculator__rem_
             else if (a != "" && b != "")
             {
                 LogicalPanel.Enabled = false;
+                TwoValuePanel.Enabled = true;
                 OperationsPanel.Enabled = true;
                 //Проверяет оба значения на int
                 if (int.TryParse(a, out int intA) && int.TryParse(b, out int intB))
