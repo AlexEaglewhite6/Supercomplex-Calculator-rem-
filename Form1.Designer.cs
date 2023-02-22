@@ -52,60 +52,67 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 24);
+            this.textBox1.Location = new System.Drawing.Point(31, 16);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 26);
+            this.textBox1.Size = new System.Drawing.Size(89, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(47, 90);
+            this.textBox2.Location = new System.Drawing.Point(31, 58);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 26);
+            this.textBox2.Size = new System.Drawing.Size(89, 20);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 30);
+            this.label1.Location = new System.Drawing.Point(11, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 20);
+            this.label1.Size = new System.Drawing.Size(17, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "A:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 96);
+            this.label2.Location = new System.Drawing.Point(11, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 20);
+            this.label2.Size = new System.Drawing.Size(17, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "B:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(202, 24);
+            this.label3.Location = new System.Drawing.Point(135, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 20);
+            this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Результат:";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(301, 21);
+            this.richTextBox1.Location = new System.Drawing.Point(201, 14);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(269, 95);
+            this.richTextBox1.Size = new System.Drawing.Size(181, 63);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
             // ExponentiationBtn
             // 
-            this.ExponentiationBtn.Location = new System.Drawing.Point(425, 15);
+            this.ExponentiationBtn.Location = new System.Drawing.Point(283, 10);
+            this.ExponentiationBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ExponentiationBtn.Name = "ExponentiationBtn";
-            this.ExponentiationBtn.Size = new System.Drawing.Size(75, 50);
+            this.ExponentiationBtn.Size = new System.Drawing.Size(50, 32);
             this.ExponentiationBtn.TabIndex = 8;
             this.ExponentiationBtn.Text = "n^m";
             this.ExponentiationBtn.UseVisualStyleBackColor = true;
@@ -113,9 +120,10 @@
             // 
             // SquareBtn
             // 
-            this.SquareBtn.Location = new System.Drawing.Point(344, 15);
+            this.SquareBtn.Location = new System.Drawing.Point(229, 10);
+            this.SquareBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SquareBtn.Name = "SquareBtn";
-            this.SquareBtn.Size = new System.Drawing.Size(75, 50);
+            this.SquareBtn.Size = new System.Drawing.Size(50, 32);
             this.SquareBtn.TabIndex = 7;
             this.SquareBtn.Text = "n²";
             this.SquareBtn.UseVisualStyleBackColor = true;
@@ -123,9 +131,10 @@
             // 
             // RootBtn
             // 
-            this.RootBtn.Location = new System.Drawing.Point(263, 15);
+            this.RootBtn.Location = new System.Drawing.Point(175, 10);
+            this.RootBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RootBtn.Name = "RootBtn";
-            this.RootBtn.Size = new System.Drawing.Size(75, 50);
+            this.RootBtn.Size = new System.Drawing.Size(50, 32);
             this.RootBtn.TabIndex = 6;
             this.RootBtn.Text = "√";
             this.RootBtn.UseVisualStyleBackColor = true;
@@ -133,9 +142,10 @@
             // 
             // FactorialBtn
             // 
-            this.FactorialBtn.Location = new System.Drawing.Point(182, 71);
+            this.FactorialBtn.Location = new System.Drawing.Point(121, 46);
+            this.FactorialBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FactorialBtn.Name = "FactorialBtn";
-            this.FactorialBtn.Size = new System.Drawing.Size(75, 50);
+            this.FactorialBtn.Size = new System.Drawing.Size(50, 32);
             this.FactorialBtn.TabIndex = 5;
             this.FactorialBtn.Text = "n!";
             this.FactorialBtn.UseVisualStyleBackColor = true;
@@ -143,9 +153,10 @@
             // 
             // DivisionByModuleBtn
             // 
-            this.DivisionByModuleBtn.Location = new System.Drawing.Point(101, 71);
+            this.DivisionByModuleBtn.Location = new System.Drawing.Point(67, 46);
+            this.DivisionByModuleBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DivisionByModuleBtn.Name = "DivisionByModuleBtn";
-            this.DivisionByModuleBtn.Size = new System.Drawing.Size(75, 50);
+            this.DivisionByModuleBtn.Size = new System.Drawing.Size(50, 32);
             this.DivisionByModuleBtn.TabIndex = 4;
             this.DivisionByModuleBtn.Text = "%";
             this.DivisionByModuleBtn.UseVisualStyleBackColor = true;
@@ -153,9 +164,10 @@
             // 
             // DivisionBtn
             // 
-            this.DivisionBtn.Location = new System.Drawing.Point(20, 71);
+            this.DivisionBtn.Location = new System.Drawing.Point(13, 46);
+            this.DivisionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DivisionBtn.Name = "DivisionBtn";
-            this.DivisionBtn.Size = new System.Drawing.Size(75, 50);
+            this.DivisionBtn.Size = new System.Drawing.Size(50, 32);
             this.DivisionBtn.TabIndex = 3;
             this.DivisionBtn.Text = "/";
             this.DivisionBtn.UseVisualStyleBackColor = true;
@@ -163,9 +175,10 @@
             // 
             // MultiplicationBtn
             // 
-            this.MultiplicationBtn.Location = new System.Drawing.Point(182, 15);
+            this.MultiplicationBtn.Location = new System.Drawing.Point(121, 10);
+            this.MultiplicationBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MultiplicationBtn.Name = "MultiplicationBtn";
-            this.MultiplicationBtn.Size = new System.Drawing.Size(75, 50);
+            this.MultiplicationBtn.Size = new System.Drawing.Size(50, 32);
             this.MultiplicationBtn.TabIndex = 2;
             this.MultiplicationBtn.Text = "*";
             this.MultiplicationBtn.UseVisualStyleBackColor = true;
@@ -173,9 +186,10 @@
             // 
             // SubtractionBtn
             // 
-            this.SubtractionBtn.Location = new System.Drawing.Point(101, 15);
+            this.SubtractionBtn.Location = new System.Drawing.Point(67, 10);
+            this.SubtractionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SubtractionBtn.Name = "SubtractionBtn";
-            this.SubtractionBtn.Size = new System.Drawing.Size(75, 50);
+            this.SubtractionBtn.Size = new System.Drawing.Size(50, 32);
             this.SubtractionBtn.TabIndex = 1;
             this.SubtractionBtn.Text = "-";
             this.SubtractionBtn.UseVisualStyleBackColor = true;
@@ -183,9 +197,10 @@
             // 
             // AdditionBtn
             // 
-            this.AdditionBtn.Location = new System.Drawing.Point(20, 15);
+            this.AdditionBtn.Location = new System.Drawing.Point(13, 10);
+            this.AdditionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AdditionBtn.Name = "AdditionBtn";
-            this.AdditionBtn.Size = new System.Drawing.Size(75, 50);
+            this.AdditionBtn.Size = new System.Drawing.Size(50, 32);
             this.AdditionBtn.TabIndex = 0;
             this.AdditionBtn.Text = "+";
             this.AdditionBtn.UseVisualStyleBackColor = true;
@@ -193,30 +208,36 @@
             // 
             // XorBtn
             // 
-            this.XorBtn.Location = new System.Drawing.Point(425, 71);
+            this.XorBtn.Location = new System.Drawing.Point(283, 46);
+            this.XorBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.XorBtn.Name = "XorBtn";
-            this.XorBtn.Size = new System.Drawing.Size(75, 50);
+            this.XorBtn.Size = new System.Drawing.Size(50, 32);
             this.XorBtn.TabIndex = 11;
             this.XorBtn.Text = "XOR";
             this.XorBtn.UseVisualStyleBackColor = true;
+            this.XorBtn.Click += new System.EventHandler(this.XorBtn_Click);
             // 
             // OrBtn
             // 
-            this.OrBtn.Location = new System.Drawing.Point(344, 71);
+            this.OrBtn.Location = new System.Drawing.Point(229, 46);
+            this.OrBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.OrBtn.Name = "OrBtn";
-            this.OrBtn.Size = new System.Drawing.Size(75, 50);
+            this.OrBtn.Size = new System.Drawing.Size(50, 32);
             this.OrBtn.TabIndex = 10;
             this.OrBtn.Text = "OR";
             this.OrBtn.UseVisualStyleBackColor = true;
+            this.OrBtn.Click += new System.EventHandler(this.OrBtn_Click);
             // 
             // AndBtn
             // 
-            this.AndBtn.Location = new System.Drawing.Point(263, 71);
+            this.AndBtn.Location = new System.Drawing.Point(175, 46);
+            this.AndBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AndBtn.Name = "AndBtn";
-            this.AndBtn.Size = new System.Drawing.Size(75, 50);
+            this.AndBtn.Size = new System.Drawing.Size(50, 32);
             this.AndBtn.TabIndex = 9;
             this.AndBtn.Text = "AND";
             this.AndBtn.UseVisualStyleBackColor = true;
+            this.AndBtn.Click += new System.EventHandler(this.AndBtn_Click);
             // 
             // OperationsPanel
             // 
@@ -232,16 +253,17 @@
             this.OperationsPanel.Controls.Add(this.OrBtn);
             this.OperationsPanel.Controls.Add(this.DivisionByModuleBtn);
             this.OperationsPanel.Controls.Add(this.FactorialBtn);
-            this.OperationsPanel.Location = new System.Drawing.Point(37, 131);
+            this.OperationsPanel.Location = new System.Drawing.Point(25, 85);
+            this.OperationsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.OperationsPanel.Name = "OperationsPanel";
-            this.OperationsPanel.Size = new System.Drawing.Size(519, 132);
+            this.OperationsPanel.Size = new System.Drawing.Size(346, 86);
             this.OperationsPanel.TabIndex = 12;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 272);
+            this.ClientSize = new System.Drawing.Size(389, 177);
             this.Controls.Add(this.OperationsPanel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label3);
@@ -249,6 +271,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Supercomplex calculator (rem)";
             this.Load += new System.EventHandler(this.Form1_Load);

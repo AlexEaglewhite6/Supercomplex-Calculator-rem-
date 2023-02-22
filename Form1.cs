@@ -18,11 +18,6 @@ namespace Supercomplex_Calculator__rem_
         {
             InitializeComponent();
         }
-
-        //private void Btn_Click(object sender, EventArgs e)
-        //{
-            
-        //}
         private void Form1_Load(object sender, EventArgs e)
         {
             OperationsPanel.Enabled = false;
@@ -70,13 +65,7 @@ namespace Supercomplex_Calculator__rem_
                     type = "double";
                     calc = new Calculator(Convert.ToDouble(ia), db);
                 }
-                //Проверяет оба значения на bool
-                else if ((a == "0" || a == "1") && (b == "0" || b == "1"))
-                {
-                    OperationsPanel.Enabled = true;
-                    calc = new Calculator(Convert.ToBoolean(a), Convert.ToBoolean(b));
-                    type = "bool";
-                }
+                
                 else //Если со всем все плохо и текст - кракозябра, то вырубаем панельку с кнопочками
                 {
                     OperationsPanel.Enabled = false;
@@ -137,6 +126,30 @@ namespace Supercomplex_Calculator__rem_
         private void FactorialBtn_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = calc.calculate("n!", type);
+        }
+        //Здесь я не придумал ничего гениальнее чем просто запихнуть конструктор сюда и использовать его в трех кнопках
+        private void CalcConstr()
+        {
+            bool boolA = Convert.ToBoolean(Convert.ToInt32(textBox1.Text));
+            bool boolB = Convert.ToBoolean(Convert.ToInt32(textBox2.Text));
+            calc = new Calculator(boolA, boolB);
+        }
+        private void AndBtn_Click(object sender, EventArgs e) 
+        {
+            CalcConstr();
+            richTextBox1.Text = calc.calculate("AND", "bool");
+        }
+
+        private void OrBtn_Click(object sender, EventArgs e)
+        {
+            CalcConstr();
+            richTextBox1.Text = calc.calculate("OR", "bool");
+        }
+
+        private void XorBtn_Click(object sender, EventArgs e)
+        {
+            CalcConstr();
+            richTextBox1.Text = calc.calculate("XOR", "bool");
         }
     }
 }
