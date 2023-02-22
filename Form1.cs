@@ -31,16 +31,37 @@ namespace Supercomplex_Calculator__rem_
             string b = textBox2.Text;
 
             //Если поля пустые, то кнопочки off
-            if (a == "" || b == "")
+            if (a == "" && b == "")
             {
                 OperationsPanel.Enabled = false;
+            } else if ((a != "" && b == "") || (a == "" && b != "")) 
+            {
+                //Включается общая панелька, чтобы смогла работать вторая
+                OperationsPanel.Enabled = true;
+                TwoValuePanel.Enabled = false;
+                string c;
+                if (a != "") { c = a; }
+                else { c = b; }
+                if(int.TryParse(c, out int intC))
+                {
+                    calc = new Calculator(intC);
+                } 
+                else if (double.TryParse(c, out double doubleC))
+                {
+                    calc = new Calculator(doubleC);
+                }
+                else
+                {
+                    OperationsPanel.Enabled = false;
+                }
             }
             //Извините, но я все еще не придумал как вынести OperationsPanel.Enabled = true;
-            else
+            else if (a != "" && b != "")
             {
                 //Проверяет оба значения на int
                 if (int.TryParse(a, out int intA) && int.TryParse(b, out int intB))
                 {
+                    TwoValuePanel.Enabled = true;
                     OperationsPanel.Enabled = true;
                     calc = new Calculator(intA, intB);
                     type = "int";

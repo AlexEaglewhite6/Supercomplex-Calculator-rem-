@@ -24,14 +24,26 @@ namespace Supercomplex_Calculator__rem_
         {
 
         }
-        //Конструктор для int
+        //Конструктор для одного int
+        public Calculator(int A)
+        {
+            intA = A;
+            type = "int";
+        }
+        //Конструктор для одного double
+        public Calculator(double A)
+        {
+            doubleA = A;
+            type = "double";
+        }
+        //Конструктор для двух int
         public Calculator(int A, int B)
         {
             intA = A;
             intB = B;
             type = "int";
         }
-        //Конструктор для double
+        //Конструктор для двух double
         public Calculator(double A, double B)
         {
             doubleA = A;
@@ -61,6 +73,7 @@ namespace Supercomplex_Calculator__rem_
             }
             
         }
+        //Основной вычисляющий метод
         public string calculate(string op, string type)
         {
             //Через свич проверяется каждая операция
