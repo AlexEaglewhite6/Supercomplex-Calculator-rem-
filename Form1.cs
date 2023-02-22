@@ -34,14 +34,18 @@ namespace Supercomplex_Calculator__rem_
             if (a == "" && b == "")
             {
                 OperationsPanel.Enabled = false;
-            } else if ((a != "" && b == "") || (a == "" && b != "")) 
+            } 
+            //Если хотя бы одно поле не пустое
+            else if ((a != "" && b == "") || (a == "" && b != "")) 
             {
                 //Включается общая панелька, чтобы смогла работать вторая
                 OperationsPanel.Enabled = true;
                 TwoValuePanel.Enabled = false;
+
                 string c;
                 if (a != "") { c = a; }
                 else { c = b; }
+
                 if(int.TryParse(c, out int intC))
                 {
                     calc = new Calculator(intC);
@@ -57,39 +61,44 @@ namespace Supercomplex_Calculator__rem_
                     OperationsPanel.Enabled = false;
                 }
             }
-            //Извините, но я все еще не придумал как вынести OperationsPanel.Enabled = true;
+            //Если оба поля непустые
             else if (a != "" && b != "")
             {
+                LogicalPanel.Enabled = false;
+                OperationsPanel.Enabled = true;
                 //Проверяет оба значения на int
                 if (int.TryParse(a, out int intA) && int.TryParse(b, out int intB))
                 {
+                   if((intA == 1 || intA == 0) && (intB == 1 || intB == 0))
+                    {
+                        LogicalPanel.Enabled = true;
+                    }
                     TwoValuePanel.Enabled = true;
-                    OperationsPanel.Enabled = true;
                     calc = new Calculator(intA, intB);
                     type = "int";
                 }
                 //Проверяет оба значения на double
                 else if (double.TryParse(a, out double doubleA) && double.TryParse(b, out double doubleB))
                 {
-                    OperationsPanel.Enabled = true;
+                    LogicalPanel.Enabled = false;
                     calc = new Calculator(doubleA, doubleB);
                     type = "double";
                 }
                 //Проверяет если одно из значений не double(т.е int)
-                else if (double.TryParse(a, out double da) && int.TryParse(b, out int ib)) //Если a - double, b - int
+                //Если a - double, b - int
+                else if (double.TryParse(a, out double da) && int.TryParse(b, out int ib)) 
                 {
-                    OperationsPanel.Enabled = true;
                     type = "double";
                     calc = new Calculator(da, Convert.ToDouble(ib));
                 }
-                else if (int.TryParse(a, out int ia) && double.TryParse(b, out double db)) //Если a - int, b - double
+                //Если a - int, b - double
+                else if (int.TryParse(a, out int ia) && double.TryParse(b, out double db)) 
                 {
-                    OperationsPanel.Enabled = true;
                     type = "double";
                     calc = new Calculator(Convert.ToDouble(ia), db);
                 }
-                
-                else //Если со всем все плохо и текст - кракозябра, то вырубаем панельку с кнопочками
+                //Если со всем все плохо и текст - кракозябра, то вырубаем панельку с кнопочками
+                else
                 {
                     OperationsPanel.Enabled = false;
                 }
@@ -151,28 +160,34 @@ namespace Supercomplex_Calculator__rem_
             richTextBox1.Text = calc.calculate("n!", type);
         }
         //Здесь я не придумал ничего гениальнее чем просто запихнуть конструктор сюда и использовать его в трех кнопках
+        //Я бы мог сюда запихать chekingAccuracy();, но оно так не будет работать, поэтому тоже дублируется
         private void CalcConstr()
         {
+            
             bool boolA = Convert.ToBoolean(Convert.ToInt32(textBox1.Text));
             bool boolB = Convert.ToBoolean(Convert.ToInt32(textBox2.Text));
             calc = new Calculator(boolA, boolB);
+            
         }
         private void AndBtn_Click(object sender, EventArgs e) 
         {
             CalcConstr();
             richTextBox1.Text = calc.calculate("AND", "bool");
+            chekingAccuracy();
         }
 
         private void OrBtn_Click(object sender, EventArgs e)
         {
             CalcConstr();
             richTextBox1.Text = calc.calculate("OR", "bool");
+            chekingAccuracy();
         }
 
         private void XorBtn_Click(object sender, EventArgs e)
         {
             CalcConstr();
             richTextBox1.Text = calc.calculate("XOR", "bool");
+            chekingAccuracy();
         }
     }
 }

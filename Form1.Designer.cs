@@ -47,17 +47,19 @@
             this.OrBtn = new System.Windows.Forms.Button();
             this.AndBtn = new System.Windows.Forms.Button();
             this.OperationsPanel = new System.Windows.Forms.Panel();
-            this.OneValuePanel = new System.Windows.Forms.Panel();
             this.TwoValuePanel = new System.Windows.Forms.Panel();
+            this.OneValuePanel = new System.Windows.Forms.Panel();
+            this.LogicalPanel = new System.Windows.Forms.Panel();
             this.OperationsPanel.SuspendLayout();
-            this.OneValuePanel.SuspendLayout();
             this.TwoValuePanel.SuspendLayout();
+            this.OneValuePanel.SuspendLayout();
+            this.LogicalPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(31, 16);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(89, 20);
             this.textBox1.TabIndex = 0;
@@ -66,7 +68,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(31, 58);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(89, 20);
             this.textBox2.TabIndex = 1;
@@ -105,7 +107,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(201, 14);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(181, 63);
             this.richTextBox1.TabIndex = 5;
@@ -114,7 +116,7 @@
             // ExponentiationBtn
             // 
             this.ExponentiationBtn.Location = new System.Drawing.Point(55, 71);
-            this.ExponentiationBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ExponentiationBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ExponentiationBtn.Name = "ExponentiationBtn";
             this.ExponentiationBtn.Size = new System.Drawing.Size(50, 32);
             this.ExponentiationBtn.TabIndex = 8;
@@ -125,7 +127,7 @@
             // SquareBtn
             // 
             this.SquareBtn.Location = new System.Drawing.Point(2, 74);
-            this.SquareBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SquareBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SquareBtn.Name = "SquareBtn";
             this.SquareBtn.Size = new System.Drawing.Size(50, 32);
             this.SquareBtn.TabIndex = 7;
@@ -136,7 +138,7 @@
             // RootBtn
             // 
             this.RootBtn.Location = new System.Drawing.Point(2, 3);
-            this.RootBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RootBtn.Margin = new System.Windows.Forms.Padding(2);
             this.RootBtn.Name = "RootBtn";
             this.RootBtn.Size = new System.Drawing.Size(50, 32);
             this.RootBtn.TabIndex = 6;
@@ -147,7 +149,7 @@
             // FactorialBtn
             // 
             this.FactorialBtn.Location = new System.Drawing.Point(2, 39);
-            this.FactorialBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FactorialBtn.Margin = new System.Windows.Forms.Padding(2);
             this.FactorialBtn.Name = "FactorialBtn";
             this.FactorialBtn.Size = new System.Drawing.Size(50, 32);
             this.FactorialBtn.TabIndex = 5;
@@ -158,7 +160,7 @@
             // DivisionByModuleBtn
             // 
             this.DivisionByModuleBtn.Location = new System.Drawing.Point(55, 36);
-            this.DivisionByModuleBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DivisionByModuleBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DivisionByModuleBtn.Name = "DivisionByModuleBtn";
             this.DivisionByModuleBtn.Size = new System.Drawing.Size(50, 32);
             this.DivisionByModuleBtn.TabIndex = 4;
@@ -169,7 +171,7 @@
             // DivisionBtn
             // 
             this.DivisionBtn.Location = new System.Drawing.Point(1, 36);
-            this.DivisionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DivisionBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DivisionBtn.Name = "DivisionBtn";
             this.DivisionBtn.Size = new System.Drawing.Size(50, 32);
             this.DivisionBtn.TabIndex = 3;
@@ -180,7 +182,7 @@
             // MultiplicationBtn
             // 
             this.MultiplicationBtn.Location = new System.Drawing.Point(1, 71);
-            this.MultiplicationBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MultiplicationBtn.Margin = new System.Windows.Forms.Padding(2);
             this.MultiplicationBtn.Name = "MultiplicationBtn";
             this.MultiplicationBtn.Size = new System.Drawing.Size(50, 32);
             this.MultiplicationBtn.TabIndex = 2;
@@ -191,7 +193,7 @@
             // SubtractionBtn
             // 
             this.SubtractionBtn.Location = new System.Drawing.Point(55, 0);
-            this.SubtractionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SubtractionBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SubtractionBtn.Name = "SubtractionBtn";
             this.SubtractionBtn.Size = new System.Drawing.Size(50, 32);
             this.SubtractionBtn.TabIndex = 1;
@@ -202,7 +204,7 @@
             // AdditionBtn
             // 
             this.AdditionBtn.Location = new System.Drawing.Point(1, 0);
-            this.AdditionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AdditionBtn.Margin = new System.Windows.Forms.Padding(2);
             this.AdditionBtn.Name = "AdditionBtn";
             this.AdditionBtn.Size = new System.Drawing.Size(50, 32);
             this.AdditionBtn.TabIndex = 0;
@@ -212,8 +214,8 @@
             // 
             // XorBtn
             // 
-            this.XorBtn.Location = new System.Drawing.Point(109, 72);
-            this.XorBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.XorBtn.Location = new System.Drawing.Point(0, 71);
+            this.XorBtn.Margin = new System.Windows.Forms.Padding(2);
             this.XorBtn.Name = "XorBtn";
             this.XorBtn.Size = new System.Drawing.Size(50, 32);
             this.XorBtn.TabIndex = 11;
@@ -223,8 +225,8 @@
             // 
             // OrBtn
             // 
-            this.OrBtn.Location = new System.Drawing.Point(109, 36);
-            this.OrBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OrBtn.Location = new System.Drawing.Point(0, 36);
+            this.OrBtn.Margin = new System.Windows.Forms.Padding(2);
             this.OrBtn.Name = "OrBtn";
             this.OrBtn.Size = new System.Drawing.Size(50, 32);
             this.OrBtn.TabIndex = 10;
@@ -234,8 +236,8 @@
             // 
             // AndBtn
             // 
-            this.AndBtn.Location = new System.Drawing.Point(109, 0);
-            this.AndBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AndBtn.Location = new System.Drawing.Point(0, 0);
+            this.AndBtn.Margin = new System.Windows.Forms.Padding(2);
             this.AndBtn.Name = "AndBtn";
             this.AndBtn.Size = new System.Drawing.Size(50, 32);
             this.AndBtn.TabIndex = 9;
@@ -248,10 +250,24 @@
             this.OperationsPanel.Controls.Add(this.TwoValuePanel);
             this.OperationsPanel.Controls.Add(this.OneValuePanel);
             this.OperationsPanel.Location = new System.Drawing.Point(73, 82);
-            this.OperationsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OperationsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.OperationsPanel.Name = "OperationsPanel";
             this.OperationsPanel.Size = new System.Drawing.Size(227, 115);
             this.OperationsPanel.TabIndex = 12;
+            // 
+            // TwoValuePanel
+            // 
+            this.TwoValuePanel.Controls.Add(this.LogicalPanel);
+            this.TwoValuePanel.Controls.Add(this.DivisionBtn);
+            this.TwoValuePanel.Controls.Add(this.ExponentiationBtn);
+            this.TwoValuePanel.Controls.Add(this.DivisionByModuleBtn);
+            this.TwoValuePanel.Controls.Add(this.AdditionBtn);
+            this.TwoValuePanel.Controls.Add(this.MultiplicationBtn);
+            this.TwoValuePanel.Controls.Add(this.SubtractionBtn);
+            this.TwoValuePanel.Location = new System.Drawing.Point(60, 6);
+            this.TwoValuePanel.Name = "TwoValuePanel";
+            this.TwoValuePanel.Size = new System.Drawing.Size(161, 103);
+            this.TwoValuePanel.TabIndex = 14;
             // 
             // OneValuePanel
             // 
@@ -263,27 +279,21 @@
             this.OneValuePanel.Size = new System.Drawing.Size(55, 107);
             this.OneValuePanel.TabIndex = 13;
             // 
-            // TwoValuePanel
+            // LogicalPanel
             // 
-            this.TwoValuePanel.Controls.Add(this.DivisionBtn);
-            this.TwoValuePanel.Controls.Add(this.OrBtn);
-            this.TwoValuePanel.Controls.Add(this.ExponentiationBtn);
-            this.TwoValuePanel.Controls.Add(this.DivisionByModuleBtn);
-            this.TwoValuePanel.Controls.Add(this.AdditionBtn);
-            this.TwoValuePanel.Controls.Add(this.AndBtn);
-            this.TwoValuePanel.Controls.Add(this.XorBtn);
-            this.TwoValuePanel.Controls.Add(this.MultiplicationBtn);
-            this.TwoValuePanel.Controls.Add(this.SubtractionBtn);
-            this.TwoValuePanel.Location = new System.Drawing.Point(60, 6);
-            this.TwoValuePanel.Name = "TwoValuePanel";
-            this.TwoValuePanel.Size = new System.Drawing.Size(161, 103);
-            this.TwoValuePanel.TabIndex = 14;
+            this.LogicalPanel.Controls.Add(this.XorBtn);
+            this.LogicalPanel.Controls.Add(this.AndBtn);
+            this.LogicalPanel.Controls.Add(this.OrBtn);
+            this.LogicalPanel.Location = new System.Drawing.Point(108, 0);
+            this.LogicalPanel.Name = "LogicalPanel";
+            this.LogicalPanel.Size = new System.Drawing.Size(53, 106);
+            this.LogicalPanel.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 206);
+            this.ClientSize = new System.Drawing.Size(399, 216);
             this.Controls.Add(this.OperationsPanel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label3);
@@ -291,13 +301,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Supercomplex calculator (rem)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.OperationsPanel.ResumeLayout(false);
-            this.OneValuePanel.ResumeLayout(false);
             this.TwoValuePanel.ResumeLayout(false);
+            this.OneValuePanel.ResumeLayout(false);
+            this.LogicalPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,6 +337,7 @@
         private System.Windows.Forms.Panel OperationsPanel;
         private System.Windows.Forms.Panel OneValuePanel;
         private System.Windows.Forms.Panel TwoValuePanel;
+        private System.Windows.Forms.Panel LogicalPanel;
     }
 }
 

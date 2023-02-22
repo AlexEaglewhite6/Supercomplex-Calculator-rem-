@@ -98,7 +98,10 @@ namespace Supercomplex_Calculator__rem_
                 case "/":
                     try
                     {
-                        if (type == "int") { return (intA / intB).ToString(); }
+                        if (type == "int") {
+                            if (intB != 0) { return (Convert.ToDouble(intA) / Convert.ToDouble(intB)).ToString(); }
+                            else { MessageBox.Show(divByZeroEx.Message, "Ужас"); }
+                        }
                         if (type == "double") { return (doubleA / doubleB).ToString(); }
                     } catch
                     {
