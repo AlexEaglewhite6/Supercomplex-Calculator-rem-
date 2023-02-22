@@ -45,10 +45,12 @@ namespace Supercomplex_Calculator__rem_
                 if(int.TryParse(c, out int intC))
                 {
                     calc = new Calculator(intC);
+                    type = "int";
                 } 
                 else if (double.TryParse(c, out double doubleC))
                 {
                     calc = new Calculator(doubleC);
+                    type = "double";
                 }
                 else
                 {
