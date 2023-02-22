@@ -40,7 +40,7 @@
             this.FactorialBtn = new System.Windows.Forms.Button();
             this.DivisionByModuleBtn = new System.Windows.Forms.Button();
             this.DivisionBtn = new System.Windows.Forms.Button();
-            this.multiplicationBtn = new System.Windows.Forms.Button();
+            this.MultiplicationBtn = new System.Windows.Forms.Button();
             this.SubtractionBtn = new System.Windows.Forms.Button();
             this.AdditionBtn = new System.Windows.Forms.Button();
             this.XorBtn = new System.Windows.Forms.Button();
@@ -109,6 +109,7 @@
             this.ExponentiationBtn.TabIndex = 8;
             this.ExponentiationBtn.Text = "n^m";
             this.ExponentiationBtn.UseVisualStyleBackColor = true;
+            this.ExponentiationBtn.Click += new System.EventHandler(this.ExponentiationBtn_Click);
             // 
             // SquareBtn
             // 
@@ -118,6 +119,7 @@
             this.SquareBtn.TabIndex = 7;
             this.SquareBtn.Text = "n²";
             this.SquareBtn.UseVisualStyleBackColor = true;
+            this.SquareBtn.Click += new System.EventHandler(this.SquareBtn_Click);
             // 
             // RootBtn
             // 
@@ -127,6 +129,7 @@
             this.RootBtn.TabIndex = 6;
             this.RootBtn.Text = "√";
             this.RootBtn.UseVisualStyleBackColor = true;
+            this.RootBtn.Click += new System.EventHandler(this.RootBtn_Click);
             // 
             // FactorialBtn
             // 
@@ -136,6 +139,7 @@
             this.FactorialBtn.TabIndex = 5;
             this.FactorialBtn.Text = "n!";
             this.FactorialBtn.UseVisualStyleBackColor = true;
+            this.FactorialBtn.Click += new System.EventHandler(this.FactorialBtn_Click);
             // 
             // DivisionByModuleBtn
             // 
@@ -145,6 +149,7 @@
             this.DivisionByModuleBtn.TabIndex = 4;
             this.DivisionByModuleBtn.Text = "%";
             this.DivisionByModuleBtn.UseVisualStyleBackColor = true;
+            this.DivisionByModuleBtn.Click += new System.EventHandler(this.DivisionByModuleBtn_Click);
             // 
             // DivisionBtn
             // 
@@ -156,15 +161,15 @@
             this.DivisionBtn.UseVisualStyleBackColor = true;
             this.DivisionBtn.Click += new System.EventHandler(this.DivisionBtn_Click);
             // 
-            // multiplicationBtn
+            // MultiplicationBtn
             // 
-            this.multiplicationBtn.Location = new System.Drawing.Point(182, 15);
-            this.multiplicationBtn.Name = "multiplicationBtn";
-            this.multiplicationBtn.Size = new System.Drawing.Size(75, 50);
-            this.multiplicationBtn.TabIndex = 2;
-            this.multiplicationBtn.Text = "*";
-            this.multiplicationBtn.UseVisualStyleBackColor = true;
-            this.multiplicationBtn.Click += new System.EventHandler(this.multiplicationBtn_Click);
+            this.MultiplicationBtn.Location = new System.Drawing.Point(182, 15);
+            this.MultiplicationBtn.Name = "MultiplicationBtn";
+            this.MultiplicationBtn.Size = new System.Drawing.Size(75, 50);
+            this.MultiplicationBtn.TabIndex = 2;
+            this.MultiplicationBtn.Text = "*";
+            this.MultiplicationBtn.UseVisualStyleBackColor = true;
+            this.MultiplicationBtn.Click += new System.EventHandler(this.multiplicationBtn_Click);
             // 
             // SubtractionBtn
             // 
@@ -221,7 +226,7 @@
             this.OperationsPanel.Controls.Add(this.XorBtn);
             this.OperationsPanel.Controls.Add(this.SubtractionBtn);
             this.OperationsPanel.Controls.Add(this.SquareBtn);
-            this.OperationsPanel.Controls.Add(this.multiplicationBtn);
+            this.OperationsPanel.Controls.Add(this.MultiplicationBtn);
             this.OperationsPanel.Controls.Add(this.RootBtn);
             this.OperationsPanel.Controls.Add(this.AndBtn);
             this.OperationsPanel.Controls.Add(this.OrBtn);
@@ -267,7 +272,7 @@
         private System.Windows.Forms.Button FactorialBtn;
         private System.Windows.Forms.Button DivisionByModuleBtn;
         private System.Windows.Forms.Button DivisionBtn;
-        private System.Windows.Forms.Button multiplicationBtn;
+        private System.Windows.Forms.Button MultiplicationBtn;
         private System.Windows.Forms.Button SubtractionBtn;
         private System.Windows.Forms.Button AdditionBtn;
         private System.Windows.Forms.Button XorBtn;

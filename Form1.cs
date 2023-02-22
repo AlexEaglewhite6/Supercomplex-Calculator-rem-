@@ -81,7 +81,9 @@ namespace Supercomplex_Calculator__rem_
                 {
                     OperationsPanel.Enabled = false;
                 }
+         
             }
+            
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -110,6 +112,31 @@ namespace Supercomplex_Calculator__rem_
         private void DivisionBtn_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = calc.calculate("/", type);
+        }
+
+        private void DivisionByModuleBtn_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = calc.calculate("%", type);
+        }
+
+        private void RootBtn_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = calc.calculate("√", type);
+        }
+
+        private void SquareBtn_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = calc.calculate("n²", type);
+        }
+
+        private void ExponentiationBtn_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = calc.calculate("n^m", type);
+        }
+
+        private void FactorialBtn_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = calc.calculate("n!", type);
         }
     }
 }
